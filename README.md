@@ -117,11 +117,9 @@ La captura debe mostrar claramente el nombre **API Tareas DevSecOps**. Los resul
 
 ## Construcción y ejecución con Docker
 
-Reemplazar `TU_USUARIO` por el usuario real de Docker Hub.
-
 ```bash
-docker build -t TU_USUARIO/api-tareas-devsecops:1.0.0 .
-docker run --rm -p 8080:8080 TU_USUARIO/api-tareas-devsecops:1.0.0
+docker build -t ekvaldi/api-tareas-devsecops:1.0.0 .
+docker run --rm -p 8080:8080 ekvaldi/api-tareas-devsecops:1.0.0
 ```
 
 Comprobar el contenedor en `http://localhost:8080/health`.
@@ -129,7 +127,7 @@ Comprobar el contenedor en `http://localhost:8080/health`.
 ## Escaneo con Trivy
 
 ```bash
-trivy image TU_USUARIO/api-tareas-devsecops:1.0.0
+trivy image ekvaldi/api-tareas-devsecops:1.0.0
 ```
 
 Si aparecen vulnerabilidades `HIGH` o `CRITICAL` corregibles, se debe actualizar la imagen base del `Dockerfile`, volver a construir la imagen y repetir el escaneo.
@@ -138,10 +136,10 @@ Si aparecen vulnerabilidades `HIGH` o `CRITICAL` corregibles, se debe actualizar
 
 ```bash
 docker login
-docker push TU_USUARIO/api-tareas-devsecops:1.0.0
+docker push ekvaldi/api-tareas-devsecops:1.0.0
 ```
 
-**URL pública de la imagen:** `[AGREGAR URL DE DOCKER HUB]`
+**URL pública de la imagen:** https://hub.docker.com/r/ekvaldi/api-tareas-devsecops
 
 **Repositorio del código:** https://github.com/erickvaldi/api-tareas-devsecops
 
