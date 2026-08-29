@@ -104,16 +104,17 @@ curl -X PUT http://localhost:8080/tasks/1 \
 curl -X DELETE http://localhost:8080/tasks/1
 ```
 
-## Análisis con Sonar
+## Análisis con SonarQube Cloud
 
-El archivo `sonar-project.properties` incluye la configuración básica del proyecto. Después de configurar SonarQube o SonarCloud, ejecutar el escáner correspondiente y revisar:
+El repositorio se analizó con SonarQube Cloud mediante análisis automático. El resultado definitivo fue:
 
-- Bugs.
-- Vulnerabilidades.
-- Code smells.
-- Resultado de la compuerta de calidad.
+- Quality Gate: `Passed`.
+- Seguridad: A, 0 problemas.
+- Confiabilidad: A, 0 problemas.
+- Mantenibilidad: A, 0 problemas.
+- Duplicación: 0.0 %.
 
-La captura debe mostrar claramente el nombre **API Tareas DevSecOps**. Los resultados reales y las correcciones se registran en `docs/INFORME_ENTREGA.md`.
+SonarQube Cloud no reportó hallazgos relevantes que requirieran corrección. Los resultados completos se encuentran en [`evidencias/03-sonarqube-resultados.md`](evidencias/03-sonarqube-resultados.md) y [`docs/INFORME_ENTREGA.md`](docs/INFORME_ENTREGA.md).
 
 ## Construcción y ejecución con Docker
 
