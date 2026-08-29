@@ -23,14 +23,14 @@ No deben inventarse capturas ni resultados. Cada evidencia debe obtenerse al eje
 
 ## Evidencia 4: Docker
 
-1. Construir la imagen con `docker build -t TU_USUARIO/api-tareas-devsecops:1.0.0 .`.
-2. Ejecutarla con `docker run --rm -p 8080:8080 TU_USUARIO/api-tareas-devsecops:1.0.0`.
+1. Construir la imagen con `docker build -t ekvaldi/api-tareas-devsecops:1.0.0 .`.
+2. Ejecutarla con `docker run --rm -p 8080:8080 ekvaldi/api-tareas-devsecops:1.0.0`.
 3. Comprobar nuevamente `/health`.
 4. Guardar la captura como `evidencias/04-docker.png`.
 
 ## Evidencia 5: Trivy
 
-1. Ejecutar `trivy image TU_USUARIO/api-tareas-devsecops:1.0.0`.
+1. Ejecutar `trivy image ekvaldi/api-tareas-devsecops:1.0.0`.
 2. Guardar una captura legible como `evidencias/05-trivy.png`.
 3. Si se modifica la imagen base, volver a construir y escanear la misma etiqueta.
 
