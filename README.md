@@ -30,8 +30,8 @@ api-tareas-devsecops/
 │   └── task-store.js   # Almacenamiento de tareas en memoria
 ├── test/
 │   └── app.test.js     # Pruebas automáticas
-├── docs/               # Prompts, informe y guía de evidencias
-├── evidencias/         # Capturas reales de las herramientas
+├── docs/               # Prompts, informe y documentación
+├── evidencias/         # Resultados escritos de las herramientas
 ├── Dockerfile
 ├── sonar-project.properties
 └── package.json
@@ -150,5 +150,7 @@ Los cinco prompts utilizados, su aporte y la validación realizada se encuentran
 
 ## Evidencias y reflexión
 
-- Guía de capturas: [`docs/GUIA_EVIDENCIAS.md`](docs/GUIA_EVIDENCIAS.md).
+- SonarQube Cloud: [`evidencias/03-sonarqube-resultados.md`](evidencias/03-sonarqube-resultados.md).
+- Docker: [`evidencias/04-docker-resultados.md`](evidencias/04-docker-resultados.md).
+- Trivy: [`evidencias/05-trivy-resultados.md`](evidencias/05-trivy-resultados.md).
 - Resultados y reflexión final: [`docs/INFORME_ENTREGA.md`](docs/INFORME_ENTREGA.md).
