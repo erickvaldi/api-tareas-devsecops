@@ -1,6 +1,6 @@
 # API Tareas DevSecOps
 
-API REST sencilla desarrollada en Node.js para administrar una lista de tareas. El proyecto forma parte de la actividad de la Unidad IV del curso Diseño e Implementación del Software y permite practicar un flujo básico con Sonar, Docker, Trivy y Docker Hub.
+API REST sencilla desarrollada en Node.js para administrar una lista de tareas. El proyecto permite practicar un flujo básico con Sonar, Docker, Trivy y Docker Hub en la Unidad IV, y pruebas funcionales y de carga con Apache JMeter en la Unidad V.
 
 ## Funcionalidades
 
@@ -30,6 +30,7 @@ api-tareas-devsecops/
 │   └── task-store.js   # Almacenamiento de tareas en memoria
 ├── test/
 │   └── app.test.js     # Pruebas automáticas
+├── jmeter/              # Test Plan y datos de prueba de la Unidad V
 ├── docs/               # Prompts, informe y documentación
 ├── evidencias/         # Resultados escritos de las herramientas
 ├── Dockerfile
@@ -143,6 +144,16 @@ docker push ekvaldi/api-tareas-devsecops:1.0.0
 **URL pública de la imagen:** https://hub.docker.com/r/ekvaldi/api-tareas-devsecops
 
 **Repositorio del código:** https://github.com/erickvaldi/api-tareas-devsecops
+
+## Pruebas con Apache JMeter - Unidad V
+
+El proyecto incluye un Test Plan con siete casos funcionales y tres escenarios de carga:
+
+- [`jmeter/Actividad5_PruebasJMeter.jmx`](jmeter/Actividad5_PruebasJMeter.jmx)
+- [`jmeter/datos-tareas.csv`](jmeter/datos-tareas.csv)
+- [`docs/GUIA_JMETER_UNIDAD_V.md`](docs/GUIA_JMETER_UNIDAD_V.md)
+
+Los escenarios de carga están deshabilitados inicialmente. Debe ejecutarse un Thread Group a la vez y registrar las métricas reales antes de completar el reporte.
 
 ## Uso responsable de inteligencia artificial
 
